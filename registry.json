@@ -932,7 +932,7 @@
     {
       "id": "cursor",
       "name": "Cursor",
-      "description": "Adds an authorized Cursor account as a CLIProxyAPI provider. Exposes one ID per model family and passes reasoning_effort instead of listing every Cursor variant. CPA Manager Plus quota refresh uses the dashboard session cookie. OpenAI usage is reported once from Cursor token_delta and is not double-counted. | 将已授权 Cursor 账户接入 CLIProxyAPI。每个模型族只暴露一个 ID，推理强度用 reasoning_effort 传递，避免列出全部变体。CPA Manager Plus 原配额刷新走 dashboard 会话 Cookie。OpenAI usage 用 Cursor token_delta 记一次，不重复记账。",
+      "description": "Adds an authorized Cursor account as a CLIProxyAPI provider. Exposes one ID per model family and passes reasoning_effort. Cursor dashboard usage is mapped onto Codex primary/weekly quota windows. | 将已授权 Cursor 账户接入 CLIProxyAPI。每个模型族一个 ID，推理强度用 reasoning_effort。Cursor 官方用量映射为 Codex 主窗口/次窗口。",
       "author": "MiaM1ku",
       "repository": "https://github.com/MiaM1ku/cpa-plugin-cursor",
       "homepage": "https://github.com/MiaM1ku/cpa-plugin-cursor",
@@ -943,7 +943,7 @@
         "OAuth",
         "Quota"
       ],
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "id": "provider-rate-limiter",
