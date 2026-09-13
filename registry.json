@@ -23,7 +23,9 @@
       "description": "One provider for the OpenCode Go plan: chat-completions, messages, and responses routes behind one shared key pool.",
       "author": "massiveits",
       "repository": "https://github.com/massiveits/opencode-go-cliproxyapi",
-      "tags": ["provider"]
+      "tags": [
+        "provider"
+      ]
     },
     {
       "id": "jshandler",
@@ -929,19 +931,19 @@
     },
     {
       "id": "cursor",
-      "name": "Cursor for CPA/CLIProxyAPI",
-      "description": "Adds user-authorized Cursor subscriptions as a CLIProxyAPI provider with OAuth login, dynamic model discovery, streaming OpenAI Chat Completions, bounded session checkpoints, stable tool-call IDs, empty-response validation, image and text attachments, separated request and host-attempt metrics, deduplicated account status, and bilingual model controls. | 将用户本人授权的 Cursor 订阅接入 CLIProxyAPI，提供 OAuth 登录、动态模型发现、OpenAI Chat Completions 流式调用、有界会话检查点、稳定工具调用 ID、空响应校验、图片与文本附件、分离的请求与宿主尝试指标、账户去重及中英文模型控制。",
-      "author": "yobo2u",
-      "repository": "https://github.com/yobo2u/omsub",
-      "homepage": "https://github.com/yobo2u/omsub/tree/cursor/cursor-plugin",
+      "name": "Cursor",
+      "description": "Adds an authorized Cursor account as a CLIProxyAPI provider. Exposes one ID per model family and passes reasoning_effort instead of listing every Cursor variant. CPA Manager Plus quota refresh uses the dashboard session cookie. OpenAI usage is reported once from Cursor token_delta and is not double-counted. | 将已授权 Cursor 账户接入 CLIProxyAPI。每个模型族只暴露一个 ID，推理强度用 reasoning_effort 传递，避免列出全部变体。CPA Manager Plus 原配额刷新走 dashboard 会话 Cookie。OpenAI usage 用 Cursor token_delta 记一次，不重复记账。",
+      "author": "MiaM1ku",
+      "repository": "https://github.com/MiaM1ku/cpa-plugin-cursor",
+      "homepage": "https://github.com/MiaM1ku/cpa-plugin-cursor",
       "license": "MIT",
       "tags": [
         "Provider",
         "Cursor",
         "OAuth",
-        "Management",
-        "Usage"
-      ]
+        "Quota"
+      ],
+      "version": "0.1.0"
     },
     {
       "id": "provider-rate-limiter",
